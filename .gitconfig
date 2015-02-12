@@ -1,6 +1,5 @@
 [user]
-	name = Petru Dimulescu\n
-	email = petru.dimulescu@digital-education.com
+	name = theSKa
 [credential]
 	helper = cache --timeout=3600
 [alias]
