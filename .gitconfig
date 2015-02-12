@@ -1,0 +1,22 @@
+[user]
+	name = Petru Dimulescu\n
+	email = petru.dimulescu@digital-education.com
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	st	=	status
+	cl	=	clone
+	cm	=	commit
+	co	=	checkout
+	br	=	branch 
+	ls	=	log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate #List commits in short form, with colors and branch/tag annotations
+	ll	=	log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat #List commits showing changed files
+	lnc	=	log --pretty=format:"%h\\ %s\\ [%cn]" #List with no colors if you need to chain the out put with Unix pipes
+	lds	=	log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short #List oneline commits showing dates (short)
+	ld	=	log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative #List oneline commits showing dates (relative dates)
+	le	=	log --oneline --decorate #the default look for short git log
+	la	=	"!grep '\t=' ~/.gitconfig"
+	#tree	=	log --graph --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate #List commits in short form, with colors and branch/tag annotations
+        tree	=	log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+	squash  =       rebase -i
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
