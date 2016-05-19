@@ -1,5 +1,6 @@
 [user]
-	name = theSKa
+	name = Petru Dimulescu
+	email = petru.dimulescu@transferwise.com
 [credential]
 	helper = cache --timeout=3600
 [alias]
@@ -19,3 +20,5 @@
         tree	=	log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
 	squash  =       rebase -i
 	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+[core]
+	excludesfile = /Users/petru/.gitignore_global
